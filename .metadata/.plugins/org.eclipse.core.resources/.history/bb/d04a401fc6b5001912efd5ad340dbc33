@@ -1,0 +1,8 @@
+package com.application.start.bean;
+
+import java.sql.Timestamp;
+public class Article {
+	public int id,userid;
+	public String articlename,articledescription,seo_keywords,seo_metadata;
+	
+}

@@ -1,0 +1,10 @@
+package com.application.start.service;
+import com.application.start.bean.*;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ArticleService {
+	public List<Article> getArticlesService(){
+		return null;
+	}
+}

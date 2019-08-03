@@ -1,0 +1,5 @@
+package com.application.start.JPARepo;
+
+public interface ArticleRepository {
+
+}

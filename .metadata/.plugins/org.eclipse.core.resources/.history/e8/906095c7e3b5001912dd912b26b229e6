@@ -1,0 +1,5 @@
+package com.application.start.bean;
+@Table(name="subcategory")
+public class Subcategory {
+
+}

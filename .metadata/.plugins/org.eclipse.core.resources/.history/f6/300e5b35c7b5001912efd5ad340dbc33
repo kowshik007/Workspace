@@ -1,0 +1,72 @@
+package com.application.start.bean;
+
+import java.sql.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "article")
+public class Article {
+	@Id
+	private int id;
+	private int userid;
+	private short subcategory_id;
+	private String articlename,articledescription,seo_keywords,seo_metadata;
+	private Timestamp created_timestamp,modified_timestamp;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getUserid() {
+		return userid;
+	}
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+	public short getSubcategory_id() {
+		return subcategory_id;
+	}
+	public void setSubcategory_id(short subcategory_id) {
+		this.subcategory_id = subcategory_id;
+	}
+	public String getArticlename() {
+		return articlename;
+	}
+	public void setArticlename(String articlename) {
+		this.articlename = articlename;
+	}
+	public String getArticledescription() {
+		return articledescription;
+	}
+	public void setArticledescription(String articledescription) {
+		this.articledescription = articledescription;
+	}
+	public String getSeo_keywords() {
+		return seo_keywords;
+	}
+	public void setSeo_keywords(String seo_keywords) {
+		this.seo_keywords = seo_keywords;
+	}
+	public String getSeo_metadata() {
+		return seo_metadata;
+	}
+	public void setSeo_metadata(String seo_metadata) {
+		this.seo_metadata = seo_metadata;
+	}
+	public Timestamp getCreated_timestamp() {
+		return created_timestamp;
+	}
+	public void setCreated_timestamp(Timestamp created_timestamp) {
+		this.created_timestamp = created_timestamp;
+	}
+	public Timestamp getModified_timestamp() {
+		return modified_timestamp;
+	}
+	public void setModified_timestamp(Timestamp modified_timestamp) {
+		this.modified_timestamp = modified_timestamp;
+	}	
+}

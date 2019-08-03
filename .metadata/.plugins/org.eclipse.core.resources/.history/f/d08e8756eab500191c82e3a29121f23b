@@ -1,0 +1,11 @@
+package com.application.start.controller;
+import com.application.start.bean.*;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ArticleController {
+	public List<Article> getListOfArticles(){
+		
+	}
+}

@@ -1,0 +1,24 @@
+package com.application.start.bean;
+
+import java.sql.Timestamp;
+import java.sql.Blob;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="subcategory")
+public class Subcategory {
+	@Id
+	@Column(name="id")
+	private short id;
+	@Column(name="category_id")
+	private short category_id;
+	@Column(name="sub_category_name")
+	private String sub_category_name;
+	@Column(name="sub_category_image")
+	private Blob sub_category_image;
+	
+}
